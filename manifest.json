@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Shorts Remover",
+  "version": "1.0",
+  "description": "Stops the Shorts shelf from showing on the youtube main and video pages."
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
